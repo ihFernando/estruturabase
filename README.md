@@ -21,3 +21,5 @@ Já na **index** o arquivo vem com seu **head** completo e a chamada para o **Bo
 Os arquivos bases para desenvolvimento de **scss** vem com três arquivos junto, neles um código simples já está escrito.
 
 Basta clonar e utilizar :D
+
+*Atualização: Adicão de arquivo **normalize.min.css***
