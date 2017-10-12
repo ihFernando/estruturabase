@@ -64,6 +64,8 @@ p {
 // Fim Font Size
 
 
+
+
 // Background Gradient
 @mixin background-gradient($start-color, $end-color, $orientation) { 
     background: $start-color;
@@ -86,7 +88,13 @@ p {
 // Fim Background Gradient
 
 
+
+
 // Box Shadow
+// $a = Esquerda ou Direita
+// $b = Cima ou Baixo
+// $c = Nível de esfumaçado
+
 @mixin box-shadow($a, $b, $c, $cor) {
   box-shadow: $a $b $c $cor;
   -webkit-box-shadow: $a $b $c $cor;
@@ -94,8 +102,35 @@ p {
   -ms-box-shadow: $a $b $c $cor;
   -o-box-shadow: $a $b $c $cor;
 }
+// @include box-shadow(0, 8px, 10px, rgba(0,0,0,0.14))
 // Fim Box Shadow
 
-// Padrão para os botões
-@mixin btn(){}
-// Fim padrão de botões
+
+// Botão 
+@mixin corBotao($cor, $corHover) {
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid $cor;
+    color: $cor;
+    transition: .5s ease-out;
+    &:hover {
+        background: $cor;
+        color: $corHover;    
+        transition: .2s ease-in;
+    }
+}
+
+@mixin btnRedon {   
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+@mixin btnQuad {
+    padding: 10px 20px;
+}
+
+.btn-azul {
+    @include corBotao(blue, white);
+    @include btnQuad;
+}
+// Fim Botão
