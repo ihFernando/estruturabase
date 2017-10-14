@@ -12,10 +12,26 @@ html, body {
 	box-sizing: border-box;
 }
 
-// Complementares
-
-
-// Css das páginas e sections
+// Exemplo de como usar os mixins e extends
+p {
+	@include font-size(14px)
+}
+.alinhamento-grid {
+	@include center(both);
+}
+.clearfix {
+	@extend %clearfix;
+}
+.btn-azul {
+    @include corBotao(blue, white);
+    @include btnQuad;
+}
+.gradiente {
+	@include background-gradient(red, black, 'vertical');
+}
+.box-shadow {
+	@include box-shadow(0, 8px, 10px, rgba(0,0,0,0.14))
+}
 
 
 @import 'mobile';
