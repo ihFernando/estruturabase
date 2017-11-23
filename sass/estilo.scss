@@ -1,0 +1,39 @@
+/*
+
+ =========================================================
+ * Base - v1.0.0
+
+ Contém a ligação entre os mixins e arquivos de base.
+ Estrutura de Css Padrão.
+ =========================================================
+
+ */
+
+@import './includes/var';
+@import './includes/functions';
+@import './includes/mixins/geral';
+@import './includes/animacoes';
+
+html, body {
+	width: 100%;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-seif;
+	background: $cor-0;
+	color: $fonte-1;
+	box-sizing: border-box;
+}
+
+// Padrões
+.btn {
+	@include btnRedon;
+}
+.btn-principal { 
+	@include btnCor($cor-1, transparent, $fonte-1, $cor-2); 
+}
+
+
+// Import do responsivo
+@import './includes/mobile';
+
