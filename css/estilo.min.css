@@ -1,2 +1,2 @@
-html,body{width:100%;font-size:100%;margin:0;padding:0;box-sizing:border-box;overflow-x:hidden}
+html,body{width:100%;font-size:16px;margin:0;padding:0;font-family:'Roboto', sans-seif;background:#222;color:#222;box-sizing:border-box}.btn{padding:10px 20px;border-radius:50px}.btn-principal{background:#fff;cursor:pointer;text-align:center;border:2px solid transparent;color:#222;transition:.5s ease-out}.btn-principal:hover{background:transparent;color:#111;transition:.2s ease-in}
 /*# sourceMappingURL=estilo.min.css.map */
