@@ -1,0 +1,15 @@
+/*
+
+ =========================================================
+ * Functions - v1.0.0
+
+ Contém as funções criados em SASS
+ =========================================================
+
+ */
+
+// Define default font size
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
