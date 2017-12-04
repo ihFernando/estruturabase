@@ -34,6 +34,12 @@ html, body {
 }
 
 
+// Componentes
+@import './includes/componentes/table';
+@import './includes/componentes/modal';
+@import './includes/componentes/forms';
+@import './includes/componentes/btn';
+
 // Import do responsivo
 @import './includes/mobile';
 
