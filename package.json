@@ -1,0 +1,19 @@
+{
+  "name": "estruturabase",
+  "version": "1.0.0",
+  "description": "Estrutura base para auxiliar desenvolvimento de sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihFernando/estruturabase.git"
+  },
+  "author": "ihfernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihFernando/estruturabase/issues"
+  },
+  "homepage": "https://github.com/ihFernando/estruturabase#readme"
+}
